@@ -1,0 +1,26 @@
+{% extends "settings_base.html" %}
+{% load i18n staticfiles %}
+{% load crispy_forms_tags %}
+
+
+
+{% block content %}
+
+    <div class="settings_header">
+        <h3 class="settings_title">تنظیمات عمومی</h3>
+        <p class="settings_description">اگر آپدیت جدیدی در دسترسه اطلاعات زیر را به درستی وارد کنید. ورژن نسخه فعلی اپلیکیشن
+            شما {{ current_app_version }} است. شماره نسخه جدید یکی
+            بیشتر از نسخه فعلی باشد</p>
+    </div>
+
+    {% block form_data %}
+        <div class="form-box">
+            <form method="post">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <button type="submit" class="btn btn-success">{% trans 'Save changes' %}</button>
+            </form>
+        </div>
+    {% endblock %}
+
+{% endblock %}

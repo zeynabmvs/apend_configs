@@ -1,0 +1,33 @@
+{% extends "admin/base_site.html" %}
+{% load i18n staticfiles %}
+
+{% block extrastyle %}
+    {{ block.super }}
+    <style>
+        .breadcrumbs {
+            display: none;
+        }
+
+        .settings_title {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 15px 0;
+        }
+
+        .settings_description {
+            font-size: 13px;
+        }
+
+        .form-box {
+            margin: 0 auto;
+            width: 70%;
+        }
+    </style>
+{% endblock %}
+
+
+{% block content %}
+
+    {% block form_data %}{% endblock %}
+
+{% endblock %}

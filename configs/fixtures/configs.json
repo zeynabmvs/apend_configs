@@ -1,0 +1,82 @@
+[
+  {
+    "model": "configs.config",
+    "pk": 1,
+    "fields": {
+      "key": "notif_ad_approved",
+      "value": "",
+      "jvalue": {
+        "is_enable": true,
+        "push": false,
+        "pushe": true,
+        "sms": false,
+        "email": false,
+        "show_description": "ارسال نوتیف بعد از تایید آگهی توسط ادمین",
+        "def_title": "تایید آگهی",
+        "title": "",
+        "def_body": "آگهی شما: {} تایید شد.",
+        "body": ""
+      }
+    }
+  },
+    {
+    "model": "configs.config",
+    "pk": 2,
+    "fields": {
+      "key": "notif_ad_declined",
+      "value": "",
+      "jvalue": {
+        "is_enable": true,
+        "push": false,
+        "pushe": true,
+        "sms": false,
+        "email": false,
+        "show_description": "ارسال نوتیف بعد از رد آگهی توسط ادمین",
+        "def_title": "رد آگهی",
+        "title": "",
+        "def_body": "آگهی شما: {} تایید نشد.",
+        "body": ""
+      }
+    }
+  },
+    {
+    "model": "configs.config",
+    "pk": 3,
+    "fields": {
+      "key": "notif_store_approved",
+      "value": "",
+      "jvalue": {
+        "is_enable": true,
+        "push": false,
+        "pushe": true,
+        "sms": false,
+        "email": false,
+        "show_description": "تایید کسب و کار توسط ادمین ",
+        "def_title": "تایید کسب و کار",
+        "title": "",
+        "def_body": "کسب و کار شما توسط ادمین تایید شد.",
+        "body": ""
+      }
+    }
+  },
+    {
+    "model": "configs.config",
+    "pk": 4,
+    "fields": {
+      "key": "notif_store_declined",
+      "value": "",
+      "jvalue": {
+        "is_enable": true,
+        "push": false,
+        "pushe": true,
+        "sms": false,
+        "email": false,
+        "show_description": "رد کسب و کار توسط ادمین ",
+        "def_title": "رد کسب و کار",
+        "title": "",
+        "def_body": "متاسفانه کسب و کار شما تایید نشد.",
+        "body": ""
+      }
+    }
+  }
+]

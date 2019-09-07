@@ -1,0 +1,22 @@
+{% extends "settings_base.html" %}
+{% load i18n staticfiles %}
+
+
+{% block content %}
+    <div class="settings_header">
+        <h3 class="settings_title"></h3>
+        <p class="settings_description">تنظیمات مربوط به صفحه درباره ما در اپلیکیشن</p>
+    </div>
+
+    {% block form_data %}
+        <div class="form-box">
+            <form method="post">
+                {% csrf_token %}
+                {{ form }}
+                <button type="submit" class="btn btn-success">{% trans 'Save changes' %}</button>
+            </form>
+        </div>
+    {% endblock %}
+
+{% endblock %}
+
