@@ -11,7 +11,7 @@ from rest_framework.permissions import AllowAny
 from configs.forms import AboutUsForm, GeneralConfigForm, UpdateForm
 from configs.models import Config, ClientConfig
 from configs.serializers import ConfigSerializer
-from core.mixins import CustomViewContextMixin
+from .mixins import CustomViewContextMixin
 
 
 class ConfigDetailView(generics.RetrieveAPIView):
