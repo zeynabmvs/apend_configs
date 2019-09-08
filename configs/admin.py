@@ -1,8 +1,8 @@
+from configs.models import ClientConfig, Config
 from django.contrib import admin
 from django.utils.translation import ugettext as _
 
-from configs.models import ClientConfig, Config
-from core.helpers import admin_field_json_formatted
+from .helpers import admin_field_json_formatted
 
 
 class ConfigAdmin(admin.ModelAdmin):
