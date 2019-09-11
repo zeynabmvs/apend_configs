@@ -9,12 +9,15 @@ configs/__init__.py
 configs/admin.py
 configs/apps.py
 configs/forms.py
+configs/helpers.py
+configs/mixins.py
 configs/models.py
 configs/serializers.py
 configs/signals.py
 configs/urls.py
 configs/views.py
 configs/migrations/0001_initial.py
+configs/migrations/0002_clientconfig.py
 configs/migrations/__init__.py
 configs/templates/about_us_settings.html
 configs/templates/general_settings.html
